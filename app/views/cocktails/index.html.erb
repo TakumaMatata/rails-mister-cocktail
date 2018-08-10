@@ -1,0 +1,20 @@
+<div class="banner">
+  <div class="banner-content">
+    <h1>Your cocktail master</h1>
+    <p>Introduce your favorite potion</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <ul class="list-cocktails">
+        <% @cocktails.each do |cocktail| %>
+        <li><%= link_to cocktail.name, cocktail_path(cocktail)  %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%= link_to "Create Cocktail", new_cocktail_path %>
