@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative !important;
+  margin-bottom: 0px;
 }
 
 /* Logo */
@@ -28,7 +30,7 @@
 
 .navbar-wagon {
   // [...]
-  background-color: transparent;
+  background-color: white;
   transition: 0.5s background-color ease;
 }
 
