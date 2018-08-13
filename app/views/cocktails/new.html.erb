@@ -1,7 +1,10 @@
+<div class="space-top">
+  <h1>Add a new cocktail</h1>
+
 <%= simple_form_for [@cocktail] do |f| %>
   <%= f.input :name %>
-  <%= f.file_field :image %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
   <%= f.submit "Create Cocktail", class: "btn btn-primary" %>
 <% end %>
-
-<%= link_to "Home", cocktails_path %>
+</div>
